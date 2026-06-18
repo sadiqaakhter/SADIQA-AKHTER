@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 180" role="img" aria-labelledby="title desc">
+  <title id="title">Source II Studio logo</title>
+  <desc id="desc">Temporary wordmark for Source II Studio</desc>
+  <rect width="560" height="180" rx="28" fill="#ffffff"/>
+  <rect x="45" y="46" width="92" height="88" rx="18" fill="#121417"/>
+  <path d="M69 74h44M69 91h28M69 108h44" stroke="#b8d84f" stroke-width="8" stroke-linecap="round"/>
+  <text x="160" y="78" fill="#121417" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="900">Source II</text>
+  <text x="160" y="124" fill="#0d7568" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="900">Studio</text>
+</svg>

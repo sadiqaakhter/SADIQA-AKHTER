@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 180" role="img" aria-labelledby="title desc">
+  <title id="title">Tale Whims logo</title>
+  <desc id="desc">Temporary wordmark for Tale Whims</desc>
+  <rect width="560" height="180" rx="28" fill="#ffffff"/>
+  <rect x="46" y="42" width="86" height="96" rx="14" fill="#781833"/>
+  <path d="M66 68h46M66 91h46M66 114h32" stroke="#f7f4ef" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="121" cy="52" r="14" fill="#d49332"/>
+  <text x="158" y="88" fill="#121417" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="900">Tale</text>
+  <text x="158" y="132" fill="#781833" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="900">Whims</text>
+</svg>
