@@ -19,12 +19,18 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
 });
 
 year.textContent = new Date().getFullYear();
+
+document.querySelectorAll("img:not(.hero-image)").forEach((image) => {
+  image.loading = "lazy";
+  image.decoding = "async";
+});
+
 syncHeader();
 window.addEventListener("scroll", syncHeader, { passive: true });
 
 document
   .querySelectorAll(
-    ".positioning-grid, .positioning-cards article, .reach-grid article, .proof-grid article, .credential-grid article, .brand-card, .gallery-grid, .contact-panel"
+    ".impact-grid article, .audience-grid article, .positioning-grid, .positioning-cards article, .reach-grid article, .proof-grid article, .credential-grid article, .brand-card, .gallery-grid, .contact-panel, .page-hero, .timeline article, .service-grid article, .feature-row, .process-list article, .mini-gallery img, .portfolio-grid article, .blog-grid article, .contact-pathways article"
   )
   .forEach((item) => item.classList.add("reveal-item"));
 
