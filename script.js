@@ -14,8 +14,41 @@ menuButton.addEventListener("click", () => {
   header.classList.toggle("is-open");
 });
 
+document.querySelectorAll(".nav-toggle").forEach((toggle) => {
+  toggle.addEventListener("click", (event) => {
+    event.stopPropagation();
+    const item = toggle.closest(".nav-item");
+    const isOpen = item.classList.contains("is-open");
+
+    document.querySelectorAll(".nav-item.is-open").forEach((openItem) => {
+      openItem.classList.remove("is-open");
+      openItem.querySelector(".nav-toggle")?.setAttribute("aria-expanded", "false");
+    });
+
+    item.classList.toggle("is-open", !isOpen);
+    toggle.setAttribute("aria-expanded", String(!isOpen));
+  });
+});
+
 document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", () => header.classList.remove("is-open"));
+  link.addEventListener("click", () => {
+    header.classList.remove("is-open");
+    document.querySelectorAll(".nav-item.is-open").forEach((item) => {
+      item.classList.remove("is-open");
+      item.querySelector(".nav-toggle")?.setAttribute("aria-expanded", "false");
+    });
+  });
+});
+
+document.addEventListener("click", (event) => {
+  if (event.target.closest(".nav-item")) {
+    return;
+  }
+
+  document.querySelectorAll(".nav-item.is-open").forEach((item) => {
+    item.classList.remove("is-open");
+    item.querySelector(".nav-toggle")?.setAttribute("aria-expanded", "false");
+  });
 });
 
 year.textContent = new Date().getFullYear();
@@ -31,6 +64,9 @@ window.addEventListener("scroll", syncHeader, { passive: true });
 document
   .querySelectorAll(
     ".impact-grid article, .audience-grid article, .positioning-grid, .positioning-cards article, .reach-grid article, .proof-grid article, .credential-grid article, .brand-card, .gallery-grid, .contact-panel, .page-hero, .timeline article, .service-grid article, .feature-row, .process-list article, .mini-gallery img, .portfolio-grid article, .blog-grid article, .contact-pathways article"
+      + ", .portfolio-statement article, .portfolio-intro, .featured-project, .portfolio-hero-board"
+      + ", .speaking-hero-media, .speaker-positioning, .speaking-topic-grid article, .speaker-format-grid article, .speaker-proof, .speaker-proof-gallery img, .speaker-cta"
+      + ", .work-proof, .work-proof-gallery img"
   )
   .forEach((item) => item.classList.add("reveal-item"));
 

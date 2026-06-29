@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -19,16 +19,19 @@
   <body>
     <header class="site-header" data-header>
       <a class="brand-mark" href="index.html#top" aria-label="Sadiqa Akhter home"><span>SA</span><strong>Sadiqa Akhter</strong></a>
-      <nav class="nav-links" aria-label="Main navigation">
+            <nav class="nav-links" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="schools.html">For Schools</a>
-        <a href="authors.html">For Authors</a>
-        <a href="businesses.html">For Businesses</a>
-        <a href="speaking.html">Speaking</a>
-        <a href="portfolio.html">Portfolio</a>
+        <div class="nav-item has-dropdown">
+          <button class="nav-toggle" type="button" aria-expanded="false">Work <span class="nav-caret" aria-hidden="true"></span></button>
+          <div class="nav-menu">
+            <a href="schools.html">Education &amp; STEM</a>
+            <a href="creative-services.html">Creative Services</a>
+            <a href="speaking.html">Speaking &amp; Workshops</a>
+          </div>
+        </div>
         <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
+        <a class="nav-cta" href="contact.html">Contact</a>
       </nav>
       <button class="menu-button" type="button" data-menu-button aria-label="Open menu"><span></span><span></span></button>
     </header>
@@ -54,12 +57,65 @@
         <div class="timeline">
           <article><small>01</small><h3>Children's Book Illustrator</h3><p>Built deep experience in character design, picture-book storytelling, formatting, and publishing-ready creative work.</p></article>
           <article><small>02</small><h3>Creative Director</h3><p>Expanded from individual projects into art direction, visual systems, author support, and international creative delivery.</p></article>
-          <article><small>03</small><h3>Founder of Source II Studio</h3><p>Created a creative-tech studio serving authors, educators, brands, and founders through design, animation, websites, and AI-supported systems.</p></article>
+          <article><small>03</small><h3>Founder of Source II Studio</h3><p>Created a creative-tech studio serving authors, publishers, educators, brands, and founders through design, animation, websites, AI-supported systems, and book-services production.</p></article>
           <article><small>04</small><h3>Founder of Mellow Learners</h3><p>Built an EdTech platform focused on story-driven STEM, missions, hands-on learning, and future-ready education.</p></article>
           <article><small>05</small><h3>STEM Educator</h3><p>Developed workshops, mentorship experiences, coding inspiration, space science engagement, and classroom innovation programs.</p></article>
           <article><small>06</small><h3>AI Education Leader</h3><p>Integrated AI literacy, responsible tools, Google educator practice, Gemini credentials, and future-skills learning into her education work.</p></article>
           <article><small>07</small><h3>Speaker & Workshop Presenter</h3><p>Supports schools, conferences, teachers, learners, and organizations with practical sessions around creativity, STEM, AI, and innovation.</p></article>
           <article><small>08</small><h3>Future Vision</h3><p>Building learning worlds where children, educators, authors, and organizations can use technology with imagination and purpose.</p></article>
+        </div>
+      </section>
+
+      <section class="proof-section" id="recognition">
+        <div class="section-heading split">
+          <div>
+            <p class="section-label">Awards, Certifications & Recognition</p>
+            <h2>Credibility across EdTech, AI, STEM, creative leadership, and international delivery.</h2>
+          </div>
+          <p>
+            A compact view of the recognition behind the profile: founder work, educator certifications,
+            AI training, STEM credentials, public programs, awards, and evidence from school and community work.
+          </p>
+        </div>
+
+        <div class="proof-grid">
+          <article>
+            <small>Education Leadership</small>
+            <h3>Google-Certified Educator</h3>
+            <p>Applies Google tools, classroom technology, digital teaching practice, and AI-supported workflows in modern learning environments.</p>
+          </article>
+          <article>
+            <small>AI & Future Skills</small>
+            <h3>Certified AI Educator Track</h3>
+            <p>Holds credentials across IBM AI, Gemini, ChatGPT for K-12, and generative AI for educators.</p>
+          </article>
+          <article>
+            <small>STEM Recognition</small>
+            <h3>STEM.org & Micro:bit</h3>
+            <p>Credentials connected to STEM education, physical computing, sensors, radio networks, and design thinking.</p>
+          </article>
+          <article>
+            <small>Space & Science</small>
+            <h3>NASA-Linked Learning</h3>
+            <p>Open Science 101, moon observation activities, Space Apps mentorship, and student innovation programs.</p>
+          </article>
+          <article>
+            <small>Awards</small>
+            <h3>Digi Leader, ITCN Asia & She Vows</h3>
+            <p>Recognition connected to digital leadership, technology, innovation, community impact, and meaningful work.</p>
+          </article>
+          <article>
+            <small>International Portfolio</small>
+            <h3>500+ Creative Projects</h3>
+            <p>Children's book services through Source II Studio, plus illustration, animation, publishing support, creative-tech services, and global-facing client work.</p>
+          </article>
+        </div>
+
+        <div class="recognition-strip" aria-label="Selected certificates and awards">
+          <img src="assets/gallery/Certificates/Google%20Cert%20lvl%201.png" alt="Google Certified Educator Level 1 certificate">
+          <img src="assets/gallery/Certificates/Stem%20org%20Cert%20USA.png" alt="STEM.org certificate">
+          <img src="assets/gallery/Certificates/generative%20ai%20for%20educators.png" alt="Generative AI for Educators certificate">
+          <img src="assets/gallery/Digi%20Leader%20Award.png" alt="Digi Leader Award">
         </div>
       </section>
     </main>
@@ -69,3 +125,6 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+
+

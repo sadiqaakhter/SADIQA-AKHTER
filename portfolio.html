@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,23 +9,104 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-header" data-header><a class="brand-mark" href="index.html#top" aria-label="Sadiqa Akhter home"><span>SA</span><strong>Sadiqa Akhter</strong></a><nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="schools.html">For Schools</a><a href="authors.html">For Authors</a><a href="businesses.html">For Businesses</a><a href="speaking.html">Speaking</a><a href="portfolio.html">Portfolio</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></nav><button class="menu-button" type="button" data-menu-button aria-label="Open menu"><span></span><span></span></button></header>
+    <header class="site-header" data-header><a class="brand-mark" href="index.html#top" aria-label="Sadiqa Akhter home"><span>SA</span><strong>Sadiqa Akhter</strong></a>      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="nav-item has-dropdown">
+          <button class="nav-toggle" type="button" aria-expanded="false">Work <span class="nav-caret" aria-hidden="true"></span></button>
+          <div class="nav-menu">
+            <a href="schools.html">Education &amp; STEM</a>
+            <a href="creative-services.html">Creative Services</a>
+            <a href="speaking.html">Speaking &amp; Workshops</a>
+          </div>
+        </div>
+        <a href="blog.html">Blog</a>
+        <a class="nav-cta" href="contact.html">Contact</a>
+      </nav><button class="menu-button" type="button" data-menu-button aria-label="Open menu"><span></span><span></span></button></header>
     <main id="top">
-      <section class="page-hero"><div><p class="hero-badge">Portfolio</p><h1>Proof organized by <span>education, publishing, STEM, AI, and creative direction.</span></h1><p>This portfolio is structured around the areas people come looking for, so schools, authors, businesses, and event organizers can quickly find relevant proof.</p></div><img src="assets/gallery/Digi%20Leader%20Award.png" alt="Digi Leader Award"></section>
-      <section class="page-section">
-        <div class="portfolio-filters" aria-label="Portfolio categories"><a href="#education">Education</a><a href="#books">Children's Books</a><a href="#illustration">Illustration</a><a href="#animation">Animation</a><a href="#ai">AI Projects</a><a href="#speaking">Speaking</a><a href="#stem">STEM</a><a href="#creative">Creative Direction</a></div>
-        <div class="portfolio-grid">
-          <article id="education"><img src="assets/gallery/School%20Workshops.png" alt="School workshop"><h3>Education Programs</h3><p>School workshops, teacher training, digital learning, and learner engagement.</p></article>
-          <article id="books"><img src="assets/logos/tale-whims.svg" alt="Tale Whims"><h3>Children's Books</h3><p>Story worlds, illustration, character design, formatting, and author support.</p></article>
-          <article id="illustration"><img src="assets/logos/source-ii-studio.svg" alt="Source II Studio"><h3>Illustration</h3><p>Visual storytelling, educational illustration, characters, and publishing visuals.</p></article>
-          <article id="animation"><img src="assets/logos/source-ii-studio.svg" alt="Source II Studio"><h3>Animation</h3><p>Book trailers, motion graphics, explainers, and campaign-ready visual assets.</p></article>
-          <article id="ai"><img src="assets/gallery/Certificates/generative%20ai%20for%20educators.png" alt="Generative AI for educators certificate"><h3>AI Projects</h3><p>AI education, teacher workflows, content systems, and responsible future-skills learning.</p></article>
-          <article id="speaking"><img src="assets/gallery/Teachers%20Trainign%202025%202.jpg" alt="Speaking and teacher training"><h3>Speaking</h3><p>Conference sessions, workshops, mentorship, and education innovation talks.</p></article>
-          <article id="stem"><img src="assets/gallery/NASA%20MOON%20Observation%202024.jpg" alt="NASA moon observation"><h3>STEM</h3><p>Space science, Micro:bit, coding inspiration, STEM missions, and student projects.</p></article>
-          <article id="creative"><img src="assets/logos/source-ii-studio.svg" alt="Source II Studio"><h3>Creative Direction</h3><p>Brand visuals, creative systems, digital products, websites, and campaigns.</p></article>
+      <section class="page-hero portfolio-hero">
+        <div>
+          <p class="hero-badge">Portfolio</p>
+          <h1>A body of work across <span>STEM learning, story worlds, AI, and creative technology.</span></h1>
+          <p>My portfolio brings together the work I am known for: education programs, children's publishing, animation, AI learning, STEM mentorship, and visual systems built for real audiences.</p>
+          <div class="portfolio-hero-actions">
+            <a class="button primary" href="contact.html">Contact</a>
+            <a class="button secondary" href="#featured-work">Explore Work</a>
+          </div>
+        </div>
+        <div class="portfolio-hero-board" aria-label="Portfolio highlights">
+          <img class="portfolio-hero-main" src="assets/work/speaking/Teachers%20Trainign%202025%202.jpg" alt="Sadiqa Akhter leading educator training">
+          <div class="portfolio-proof-card">
+            <span>International Reach</span>
+            <strong>Education + AI + Creative Tech</strong>
+          </div>
+          <div class="portfolio-mini-card">
+            <img src="assets/gallery/Certificates/generative%20ai%20for%20educators.png" alt="Generative AI for educators badge">
+            <img src="assets/gallery/Certificates/Microbit/Microbit%20Expert.png" alt="Microbit expert certificate">
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-statement" aria-label="Portfolio focus">
+        <article><span>01</span><strong>Learning Systems</strong><p>STEM, AI literacy, school workshops, educator training, and future-skills programs.</p></article>
+        <article><span>02</span><strong>Story Worlds</strong><p>Children's book worlds through Tale Whims, with author and publisher services delivered through Source II Studio.</p></article>
+        <article><span>03</span><strong>Creative Tech</strong><p>Websites, design systems, AI automations, and branded content for founders and organizations.</p></article>
+      </section>
+
+      <section class="page-section portfolio-page" id="featured-work">
+        <div class="portfolio-intro">
+          <div>
+            <p class="section-label">Selected Portfolio</p>
+            <h2>Work grouped by what clients, schools, authors, and partners need to see first.</h2>
+          </div>
+          <p>Each category shows the type of outcome I help create: stronger learning experiences, more beautiful books, clearer digital systems, and confident public-facing education work.</p>
+        </div>
+
+        <div class="portfolio-filters" aria-label="Portfolio categories"><a href="#education">Education</a><a href="#books">Children's Books</a><a href="#illustration">Illustration</a><a href="#animation">Animation</a><a href="#ai">AI Projects</a><a href="#speaking">Speaking</a><a href="#stem">STEM</a><a href="#creative">Creative Work</a></div>
+
+        <div class="featured-portfolio-grid">
+          <article class="featured-project" id="education">
+            <img src="assets/work/education/School%20Workshops.png" alt="School workshop">
+            <div>
+              <span class="project-kicker">Education</span>
+              <h3>Education Programs</h3>
+              <p>Workshops, teacher training, classroom innovation, learner engagement, and practical digital learning experiences for young people and educators.</p>
+              <ul><li>STEM and future-skills learning</li><li>Educator training and mentoring</li><li>School-ready workshop delivery</li></ul>
+            </div>
+          </article>
+          <article class="featured-project" id="books">
+            <img src="assets/logos/source-ii-studio.png" alt="Source II Studio">
+            <div>
+              <span class="project-kicker">Source II Studio</span>
+              <h3>Children's Books</h3>
+              <p>Author and publisher support through Source II Studio across illustration, character design, book formatting, visual identity, and launch-ready publishing assets.</p>
+              <ul><li>Characters and story worlds</li><li>Illustration and layout support</li><li>Book trailers and visual campaigns</li></ul>
+            </div>
+          </article>
+          <article class="featured-project" id="ai">
+            <img src="assets/gallery/Certificates/Ai%20by%20IBM.jpg" alt="AI certificate">
+            <div>
+              <span class="project-kicker">AI + Education</span>
+              <h3>AI Projects</h3>
+              <p>AI literacy, responsible tool use, educator workflows, content systems, and practical automation ideas for schools and creative businesses.</p>
+              <ul><li>AI learning sessions</li><li>Teacher workflow modernization</li><li>Creative automation strategy</li></ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="portfolio-grid portfolio-detail-grid">
+          <article id="illustration"><i data-lucide="palette"></i><h3>Illustration</h3><p>Visual storytelling, educational illustration, character-led artwork, and publishing visuals designed to feel warm, clear, and memorable.</p></article>
+          <article id="animation"><i data-lucide="play-circle"></i><h3>Animation</h3><p>Book trailers, motion graphics, explainers, classroom visuals, and campaign-ready animated assets for story and learning brands.</p></article>
+          <article id="speaking"><i data-lucide="mic-2"></i><h3>Speaking</h3><p>Conference sessions, workshops, mentorship, and education innovation talks on STEM, AI, creativity, and future-ready learning.</p></article>
+          <article id="stem"><i data-lucide="orbit"></i><h3>STEM</h3><p>Space science, Micro:bit, coding inspiration, NASA-linked mentorship, student projects, and practical STEM confidence-building.</p></article>
+          <article id="creative"><i data-lucide="sparkles"></i><h3>Creative Work</h3><p>Brand visuals, creative systems, websites, AI automations, author services, digital products, and content campaigns through Source II Studio.</p></article>
+          <article><i data-lucide="globe-2"></i><h3>Global Delivery</h3><p>International-facing client work, online education delivery, remote creative support, and cross-cultural learning products.</p></article>
         </div>
       </section>
     </main>
     <footer class="site-footer"><p>Copyright <span data-year></span> Sadiqa Akhter. All rights reserved.</p><a href="#top">Back to top</a></footer><script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script><script src="script.js"></script>
   </body>
 </html>
+
+
+
