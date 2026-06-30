@@ -67,6 +67,7 @@ document
       + ", .portfolio-statement article, .portfolio-intro, .featured-project, .portfolio-hero-board"
       + ", .speaking-hero-media, .speaker-positioning, .speaking-topic-grid article, .speaker-format-grid article, .speaker-proof, .speaker-proof-gallery img, .speaker-cta"
       + ", .work-proof, .work-proof-gallery img, .certificate-card-grid article, .moments-section, .moments-track figure"
+      + ", .testimonial-grid article, .explore-more-section"
   )
   .forEach((item) => item.classList.add("reveal-item"));
 

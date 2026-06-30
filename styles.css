@@ -2233,6 +2233,66 @@ h3 {
   background: var(--paper);
 }
 
+.testimonial-section,
+.explore-more-section {
+  padding: clamp(52px, 7vw, 92px) clamp(20px, 6vw, 82px);
+  background: var(--white);
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.testimonial-grid article {
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(238, 243, 229, 0.72), rgba(255, 255, 255, 0.96));
+  box-shadow: 0 18px 42px rgba(18, 20, 23, 0.07);
+}
+
+.testimonial-grid small {
+  display: inline-flex;
+  margin-bottom: 14px;
+  color: var(--teal);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.testimonial-grid p {
+  color: var(--muted);
+}
+
+.explore-more-section {
+  text-align: center;
+  background: var(--paper);
+}
+
+.explore-more-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.explore-more-links a {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  font-weight: 900;
+  background: var(--white);
+  box-shadow: 0 14px 32px rgba(18, 20, 23, 0.06);
+}
+
 .contact-panel {
   padding: clamp(30px, 5vw, 56px);
   border: 1px solid var(--line);
@@ -2653,6 +2713,7 @@ h3 {
   .gallery-grid,
   .portfolio-statement,
   .featured-portfolio-grid,
+  .testimonial-grid,
   .speaking-topic-grid,
   .speaker-format-grid {
     grid-template-columns: 1fr;
